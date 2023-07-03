@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eternal life</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="main_container">
+        <div class="product">
+            <div class="img">
+                <img class="img_product" src="./assets/img/future-girl.png" alt="future_girl" height="180rem">
+            </div>
+            <div class="H1">
+                <h1>Conoce tu futuro según el Tarot y la IA</h1>
+            </div>
+            <select class="select" name="estilo" id="estilo">
+                <option value="1">Preguntas del futuro</option>
+                <option value="2">Preguntas del presente</option>
+                <option value="3">Preguntas del pasado</option>
+            </select>
+            <select class="select" name="personalidad" id="cantidad">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="3">4</option>
+                <option value="3">5</option>
+                <option value="3">6</option>
+                <option value="3">7</option>
+            </select>
+            <div class="total">
+                <h3>Precio</h3>
+                <span id="precio">$1.500</span>
+            </div>
+            <button class="select" type="button" onclick="calcularTotal()">Calcular total</button>
+        </div>
+        <div class="bill">
+            <div class="total">
+                <h3>Total: </h3>
+                <span id="total">$0</span>
+            </div>
+            <div class="total">
+                <h3>N° de preguntas: </h3>
+                <span id="tipoPregunta">N/A</span>
+            </div>
+            <div class="total">
+                <h3>Cantidad de preguntas: </h3>
+                <span id="cantidadSeleccionada">N/A</span>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
