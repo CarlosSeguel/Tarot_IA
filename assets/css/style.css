@@ -1,53 +1,69 @@
 body {
     margin: 0;
 }
-.main_container{
+
+.main_container {
     display: grid;
     grid-template-areas: "product bill";
 }
-.product{
+
+.product {
     grid-area: product;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    height: 69vh;
+    height: 79vh;
     background: #EE7752;
     animation: gradient 11s ease infinite;
     border-radius: 11%;
     margin: 11vh;
 }
-.img_product{
+
+.img_product {
     border-radius: 11%;
 }
-.select{
+
+.select {
     width: 50%;
     margin: 1rem auto;
     display: block;
     border-radius: 10px;
     padding: 1rem;
 }
-.bill{
+
+.bill {
     grid-area: bill;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
-.total{
+
+.total {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 1rem auto;
 }
-.total span{
+
+.total span {
     margin-left: 1rem;
 }
 
+#color-circle {
+    border-radius: 50%;
+    background-color: transparent;
+    border: black solid;
+    margin-left: 1rem;
+    height: 4vh;
+    width: 4vh;
+}
+
 @keyframes gradient {
-    0% {background: #EE7752;}
-    25% {background: #E73C7E;}
-    50% {background: #23A6D5;}
-    75% {background: #23D5AB;}
-    100% {background: #EE7752;}
+    0% { background: #EE7752; }
+    25% { background: #E73C7E; }
+    50% { background: #23A6D5; }
+    75% { background: #23D5AB; }
+    100% { background: #EE7752; }
 }
