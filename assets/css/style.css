@@ -5,6 +5,7 @@ body {
 .main_container {
     display: grid;
     grid-template-areas: "product bill";
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .product {
@@ -66,4 +67,12 @@ body {
     50% { background: #23A6D5; }
     75% { background: #23D5AB; }
     100% { background: #EE7752; }
+}
+@media (max-width: 480px) {
+    .main_container {
+        display: grid;
+        grid-template-areas: 
+        "product" 
+        "bill";
+    }
 }
